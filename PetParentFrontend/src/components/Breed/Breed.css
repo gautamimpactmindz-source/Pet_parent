@@ -1,0 +1,182 @@
+.breed-container {
+  padding: 40px;
+}
+
+.breed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.breed-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.breed-header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.breed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+/* ADD BREED BUTTON */
+
+.btn-add-breed {
+  background: linear-gradient(135deg, #1f2a44, #2d3c63);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(31, 42, 68, 0.25);
+}
+
+.btn-add-breed:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(31, 42, 68, 0.35);
+}
+
+.btn-add-breed:active {
+  transform: translateY(0px);
+  box-shadow: 0 3px 8px rgba(31, 42, 68, 0.25);
+}
+
+
+
+/* BREEDLIST */
+.breed-table-wrapper {
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.breed-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.breed-table th {
+  background: #f5f6f8;
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.breed-table td {
+  padding: 14px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+.breed-table tr:hover {
+  background: #fafafa;
+}
+
+.table-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.table-placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background: #e3e6eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status-badge.active {
+  background: #e6f7ed;
+  color: #1f9254;
+}
+
+.status-badge.inactive {
+  background: #fde8e8;
+  color: #d93025;
+}
+
+.table-actions {
+  display: flex;
+  align-items: center;     
+  justify-content: center;  
+  gap: 10px;
+}
+
+.breed-table td:last-child,
+.breed-table th:last-child {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+.btn-view {
+  background: #1f2a44;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-view:hover {
+  background: #162036;
+}
+
+.btn-edit {
+  background: #ffffff;
+  color: #1f2a44;
+  border: 1px solid #1f2a44;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-edit:hover {
+  background: #1f2a44;
+  color: #fff;
+}
+
+.btn-delete {
+  background: #fff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+  color: #fff;
+}
+
+

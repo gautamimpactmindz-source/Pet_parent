@@ -1,0 +1,38 @@
+.table-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding-bottom: 10px;
+  color: gray;
+}
+
+td {
+  padding: 12px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge.admin { background:#3b82f6; color:white; }
+.badge.user { background:#94a3b8; color:white; }
+.badge.active { background:#22c55e; color:white; }

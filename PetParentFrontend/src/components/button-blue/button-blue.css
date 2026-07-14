@@ -1,0 +1,13 @@
+.button-blue {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-light) !important;
+}
+
+.button-blue:hover,
+.button-blue:active {
+    background-color: #1e3b5e !important;
+    border-color: #1e3b5e !important;
+}

@@ -1,0 +1,41 @@
+.section-discover-breed .container {
+  padding-top: 100px;
+}
+
+.section-discover-breed p {
+  max-width: 900px;
+}
+
+.form-search-breed {
+  max-width: 600px;
+}
+
+.form-search-breed>div {
+  flex-grow: 1;
+}
+
+.form-search-breed .form-control {
+  height: 46px;
+}
+
+.form-search-breed .form-select {
+  height: 46px;
+  background-color: var(--color-tertiary);
+}
+
+.section-browse-breeds .container>p {
+  max-width: 800px;
+}
+
+.guide-container div {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86%;
+  text-align: center;
+  padding: 40px;
+}
+
+
+

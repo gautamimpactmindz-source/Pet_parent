@@ -1,0 +1,63 @@
+.users-container {
+  padding: 40px;
+}
+
+.users-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.users-header p {
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.users-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f4f6f9;
+  padding: 10px 16px;
+  border-radius: 30px;
+  width: 300px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.btn-primary {
+  background: #ff6b6b;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.users-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  
+}
+
+.users-table-header {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr 1.5fr 2fr;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}

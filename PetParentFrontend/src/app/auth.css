@@ -1,0 +1,71 @@
+.auth-wrapper .container {
+  margin-top: 100px;
+}
+
+.auth-icon span {
+  width: 60px;
+  height: 60px;
+  box-shadow: inset 0 0 4px #9ebbeb;
+}
+
+/* //authcss */
+.auth-right {
+  background-color: var(--color-tertiary);
+}
+
+.auth-right .button-gray img {
+  width: 20px;
+  height: 20px;
+}
+
+form label {
+  color: var(--color-dark);
+  margin-left: 10px;
+}
+
+form input.form-control {
+  height: 50px;
+  border: 0
+}
+
+.auth-icon {
+  min-width: 118px;
+}
+
+.auth-icon:not(:last-of-type)::before {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 30px;
+  width: 60px;
+  height: 1px;
+  border-bottom: 1px dashed var(--color-dark);
+  transform: translateX(calc(50% + 18px));
+}
+
+.auth-icon:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: -56px;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid var(--color-dark);
+}
+
+.password-show-hide {
+  left: auto;
+  top: 44px;
+  right: 10px;
+}
+
+.auth-right>* {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

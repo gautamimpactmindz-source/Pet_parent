@@ -1,0 +1,95 @@
+.breed-form-container {
+  padding: 40px;
+}
+
+.breed-form-header {
+  margin-bottom: 30px;
+}
+
+.breed-form-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.breed-form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.breed-form-card input,
+.breed-form-card textarea {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.breed-form-card h3,
+.breed-form-card h4 {
+  margin-top: 20px;
+}
+
+.array-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background: #ff7a50;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.btn-add-section {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0 20px 0;
+  border: 2px dashed #f9734c;
+  background: #fff7f3;
+  color: #f9734c;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-add-section:hover {
+  background: #f9734c;
+  color: white;
+  border-style: solid;
+}
+.image-upload-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.image-upload-group input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.image-preview {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 10px;
+}

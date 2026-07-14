@@ -1,0 +1,42 @@
+.section-hero-features {
+  background-image: url("/images/jer75.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-hero-features .container {
+  min-height: 60svh;
+  padding-top: 100px;
+}
+
+.section-hero-features .container div {
+  max-width: 700px;
+}
+
+.section-hero-features::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+  z-index: -1;
+}
+
+.cb-wrap {
+  padding-left: calc(5% + 15px);
+}
+
+.cb-left .bg-color-secondary-light {
+  color: green;
+}
+
+.cb-container {
+  padding: 15px 15px 15px 53px;
+}
+
+.cb-container img {
+  left: 15px;
+}

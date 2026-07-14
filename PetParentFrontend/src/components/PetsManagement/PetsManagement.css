@@ -1,0 +1,114 @@
+.pets-container {
+  padding: 30px;
+}
+
+/* Header */
+.pets-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pets-header p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Search */
+.pets-search {
+  margin-bottom: 20px;
+}
+
+.pets-search input {
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #f3f4f6;
+  width: 280px;
+  outline: none;
+}
+
+/* Card */
+.pets-table-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Grid Layout */
+.pets-table-header,
+.pets-table-row {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr 2fr 1.5fr;
+  align-items: center;
+  padding: 14px 10px;
+}
+
+.pets-table-header {
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 1px solid #eee;
+}
+
+.pets-table-row {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Pet Info */
+.pet-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pet-info img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pet-name {
+  font-weight: 600;
+}
+
+.pet-breed {
+  color: #6b7280;
+}
+
+/* Actions */
+.pet-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* View Button */
+.view-btn {
+  background: transparent;
+  color: #2563eb;
+  border: 1.5px solid #2563eb;
+  padding: 6px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}

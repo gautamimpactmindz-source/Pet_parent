@@ -1,0 +1,15 @@
+.quill-wrapper {
+  background: white;
+  border-radius: 12px;
+}
+
+.ql-toolbar {
+  border-radius: 12px 12px 0 0;
+  border: 1px solid #e5e7eb;
+}
+
+.ql-container {
+  border-radius: 0 0 12px 12px;
+  border: 1px solid #e5e7eb;
+  min-height: 220px;
+}

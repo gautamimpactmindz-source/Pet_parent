@@ -1,0 +1,6 @@
+@import "../UsersTable/UsersTable.css";
+
+.badge.healthy {
+  background:#16a34a;
+  color:white;
+}

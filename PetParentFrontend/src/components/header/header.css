@@ -1,0 +1,50 @@
+header {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.hdr-buttons a:hover {
+    color: var(--color-dark);
+}
+
+header .nav-link {
+    color: var(--color-light) !important;
+    padding: 8px 0 !important;
+    opacity: 0.8;
+    position: relative;
+}
+
+header .nav-link:hover {
+    opacity: 1;
+}
+
+header .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--color-secondary);
+    opacity: 0;
+}
+
+header .nav-link.active-link::before {
+    opacity: 1;
+}
+
+header .nav-link.active-link {
+    color: var(--color-secondary) !important;
+    opacity: 1 !important;
+}
+
+header .dropdown-toggle.show {
+    opacity: 1;
+}
+
+header .dropdown-item:hover,
+header .dropdown-item:active {
+    background-color: var(--color-tertiary);
+    color: var(--color-dark);
+}

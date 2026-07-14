@@ -1,0 +1,30 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-item {
+  border: 0;
+  background-color: var(--color-light);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.section-faqs {
+  background-color: #FCFFFB;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-secondary-light);
+  color: rgb(0, 55, 0);
+}
+
+.accordion-collapse {
+  background-color: var(--color-secondary-light);
+  color: var(--color-text);
+}

@@ -1,0 +1,45 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - ssdev
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p ${{ secrets.VPS_PORT }} -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy application
+        run: |
+          ssh -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+            set -e
+
+            cd ${{ secrets.APP_PATH }}
+            echo "Creating .env file..."
+            echo "${{ secrets.APP_ENV }}" > .env
+
+            echo "Pulling latest code..."
+            git pull origin ssdev
+
+            echo "Installing dependencies..."
+            npm install 
+            
+            echo "Make build...."
+            npm run build
+
+            echo "Restarting app with PM2..."
+            /usr/local/node22/bin/pm2 reload petparenting || /usr/local/node22/bin/pm2 restart petparenting
+            echo "Deployment finished successfully"
+          EOF

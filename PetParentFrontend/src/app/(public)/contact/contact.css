@@ -1,0 +1,35 @@
+.form-help .form-control {
+  min-height: 46px;
+  resize: none;
+  padding: 10px 20px;
+}
+
+.help-right address {
+  max-width: 260px;
+}
+
+.section-help .container {
+  padding-top: 100px;
+}
+
+.qh-container p {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.qh-container {
+  border-right: 1px solid #ddd;
+}
+
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.social-icons svg:hover {
+  background-color: #1e3b5e;
+}

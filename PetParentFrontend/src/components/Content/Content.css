@@ -1,0 +1,283 @@
+/* ===============================
+   PAGE CONTAINER
+================================= */
+.content-container {
+  padding: 40px;
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===============================
+   HEADER
+================================= */
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.content-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.content-header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ===============================
+   CARD WRAPPER
+================================= */
+.content-card,
+.content-form-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.04);
+}
+
+/* ===============================
+   TABLE HEADER
+================================= */
+.content-table-header {
+  display: grid;
+  grid-template-columns:  0.2fr 1.5fr 1fr 1fr;
+  align-items: center;
+  padding: 18px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ===============================
+   TABLE ROW
+================================= */
+.content-row {
+  display: grid;
+  grid-template-columns:  0.2fr 1.5fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.2s ease;
+}
+
+.content-row:last-child {
+  border-bottom: none;
+}
+
+.content-row:hover {
+  background: #fafafa;
+}
+
+/* ===============================
+   IMAGE COLUMN
+================================= */
+.content-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-image {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.content-placeholder {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #374151;
+}
+
+/* ===============================
+   TITLE COLUMN
+================================= */
+.content-row > div:nth-child(2) {
+  padding-left: 10px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.meta {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ===============================
+   STATUS COLUMN
+================================= */
+.content-row > div:nth-child(3),
+.content-table-header > span:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Published */
+.status-badge.published {
+  background: #e6f7ee;
+  color: #16a34a;
+}
+
+/* Draft */
+.status-badge.draft {
+  background: #fff4e5;
+  color: #f97316;
+}
+
+/* ===============================
+   ACTION COLUMN
+================================= */
+.content-row > div:nth-child(4),
+.content-table-header > span:nth-child(4) {
+  display: flex;
+  justify-content: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+.btn-primary {
+  background: #ff7f50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #ea580c;
+}
+
+/* Edit */
+.btn-outline {
+  border: 1px solid #ff7f50;
+  background: transparent;
+  color: #ff7f50;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: #ff7f50;
+  color: #ffffff;
+}
+
+/* Delete */
+.btn-delete {
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+/* ===============================
+   FORM STYLES
+================================= */
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Image preview */
+.image-preview {
+  margin-top: 12px;
+  width: 160px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 900px) {
+  .content-table-header,
+  .content-row {
+    grid-template-columns: 70px 1fr 110px 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .content-table-header,
+  .content-row {
+    grid-template-columns: 60px 1fr;
+    row-gap: 10px;
+  }
+
+  .content-row > div:nth-child(3),
+  .content-row > div:nth-child(4) {
+    justify-content: flex-start;
+  }
+
+  .action-buttons {
+    justify-content: flex-start;
+  }
+}
